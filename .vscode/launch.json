@@ -1,0 +1,39 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "org-service (debug)",
+      "type": "go",
+      "request": "launch",
+      "mode": "debug",
+      "program": "${workspaceFolder}/backend/services/org-service/cmd/org-service",
+      "envFile": "${workspaceFolder}/env/local/org-service.env"
+    },
+    {
+      "name": "board-service (debug)",
+      "type": "go",
+      "request": "launch",
+      "mode": "debug",
+      "program": "${workspaceFolder}/backend/services/board-service/cmd/board-service",
+      "envFile": "${workspaceFolder}/env/local/board-service.env"
+    },
+    {
+      "name": "task-service (debug)",
+      "type": "go",
+      "request": "launch",
+      "mode": "debug",
+      "envFile": "${workspaceFolder}/env/local/task-service.env",
+      "program": "${workspaceFolder}/backend/services/task-service/cmd/task-service"
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Backend: org+board+task",
+      "configurations": [
+        "org-service (debug)",
+        "board-service (debug)",
+        "task-service (debug)"
+      ]
+    }
+  ]
+}

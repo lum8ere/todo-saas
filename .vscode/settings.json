@@ -1,0 +1,22 @@
+{
+  "go.useLanguageServer": true,
+  "go.lintTool": "golangci-lint",
+  "go.testFlags": ["-v"],
+  "go.toolsEnvVars": {
+    "GO111MODULE": "on"
+  },
+  "gopls": {
+    "ui.diagnostic.analyses": {
+      "unusedparams": true
+    },
+    "ui.semanticTokens": true
+  },
+  "editor.formatOnSave": true,
+  "[go]": {
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  },
+  "terminal.integrated.cwd": "${workspaceFolder}"
+}

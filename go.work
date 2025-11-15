@@ -1,0 +1,11 @@
+go 1.24.2
+
+use (
+	./backend/libs/platform-config
+	./backend/libs/platform-db
+	./backend/libs/platform-http
+	./backend/libs/platform-kafka
+	./backend/libs/platform-logger
+	./backend/services/board-service
+	./backend/services/task-service
+)
