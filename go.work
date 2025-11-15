@@ -1,6 +1,7 @@
 go 1.24.2
 
 use (
+	./backend/libs/platform-auth
 	./backend/libs/platform-config
 	./backend/libs/platform-db
 	./backend/libs/platform-http

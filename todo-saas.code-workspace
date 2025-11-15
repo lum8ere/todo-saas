@@ -3,6 +3,7 @@
     { "path": "backend/services/org-service" },
     { "path": "backend/services/board-service" },
     { "path": "backend/services/task-service" },
+    { "path": "backend/libs/platform-auth" },
     { "path": "backend/libs/platform-config" },
     { "path": "backend/libs/platform-logger" },
     { "path": "backend/libs/platform-http" },
